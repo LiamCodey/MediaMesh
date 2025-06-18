@@ -1,49 +1,102 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MediaMesh Team</title>
-  <link rel="stylesheet" href="group.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Slider HTML & CSS | CodingNepal</title>
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="group.css" />
+  </head>
+  <body>
+    
+   <div class="logo-text">MediaMesh</div>
+   <h1 class="logo-subtitle">When Media Meets Code</h1>
+   <p class="logo-subtitlea">When Media Meets Code — blending creativity and technology through teamwork.</p>
+   
+   <div class="container swiper">
+      <div class="wrapper">
+        <div class="card-list swiper-wrapper">
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="pics\jems.jpeg" alt="Web Designer" />
+              <div class="card-tag">Web Designer</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">UI/UX Visual Designer</h3>
+              <p class="card-text">Delivers captivating user interfaces through the latest design trends like glassmorphism and minimalism. Jemuel brings life to concepts with a perfect blend of form and function — ensuring every user experience is both intuitive and aesthetically pleasing.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="pics\jems.jpeg" alt="Jemuel" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Jemuel Rex Largo</span>
+                    <span class="card-profile-role">UI/UX Visual Designer</span>
+                  </div>
+                </div>
+                <a href="largoPortfolio.html" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
 
-  <div class="logo-text">MediaMesh</div>
-  <h1 class="logo-subtitle">When Media Meets Code</h1>
-  <p class="logo-subtitlea">When Media Meets Code — blending creativity and technology through teamwork.</p>
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="pics\ako.png" alt="Leader" />
+              <div class="card-tag">Leader</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Frontend Architect /<br>Lead Developer</h3>
+              <p class="card-text">Spearheads the development of robust web applications using cutting-edge frontend frameworks. David ensures seamless integration between design and code, transforming creative visions into scalable, high-performance digital products.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="pics\ako.png" alt="David" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">David John Vibal</span>
+                    <span class="card-profile-role">Frontend Architect / <br>Lead Developer</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
 
-<div class="container">
-         <div class="card__container">
-            <article class="card__article">
-               <img src="pics\jems.jpeg" alt="image" class="card__img">
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="pics\me.png" alt="AI" />
+              <div class="card-tag">AI</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">AI-Focused UX Researcher</h3>
+              <p class="card-text">Specializes in applying AI to user behavior analysis, enabling smarter and more adaptive interface designs. Jannrey bridges technology and empathy — ensuring digital experiences are not only smart, but deeply human-centered.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="pics\me.png" alt="Salioa" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Jannrey Salioa</span>
+                    <span class="card-profile-role">AI-Focused UX Researcher</span>
+                  </div>
+                </div>
+                <a href="salioaPortfolio.html" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
 
-               <div class="card__data">
-                  <span class="card__description">Web Dev</span>
-                  <h2 class="card__title">Jemuel Rex Largo</h2>
-                  <a href="largoPortfolio.html" class="card__button" target="_blank">About Me</a>
-               </div>
-            </article>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
 
-            <article class="card__article">
-               <img src="pics\ako.png" alt="image" class="card__img">
-
-               <div class="card__data">
-                  <span class="card__description">Leader</span>
-                  <h2 class="card__title">David John Vibal</h2>
-                  <a href="vibalPortfolio.html" class="card__button" target="_blank">About Me</a>
-               </div>
-            </article>
-
-            <article class="card__article">
-               <img src="pics\me.png" alt="image" class="card__img">
-
-               <div class="card__data">
-                  <span class="card__description">Web Designer</span>
-                  <h2 class="card__title">Jannrey Salioa</h2>
-                  <a href="salioaPortfolio.html" class="card__button" target="_blank">About Me</a>
-               </div>
-            </article>
-         </div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
       </div>
-   </body>
+    </div>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="group.js"></script>
+  </body>
 </html>
